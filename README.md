@@ -7,7 +7,7 @@
 Visual Basic 6.0
 
 ### 开源协议
-[LGPL 3](http://git.oschina.net/deali/AlphaRain1/blob/master/LICENSE?dir=0&filepath=LICENSE&oid=5cc63c20b453fb272056d6ce14398a593d303a90&sha=b273dd5b7b34ba04dc89b774cdf507b921c0d025)
+[LGPL 3](http://git.oschina.net/deali/CodeZone/blob/master/LICENSE/LGPL3.LICENSE?dir=0&filepath=LICENSE%2FLGPL3.LICENSE&oid=5cc63c20b453fb272056d6ce14398a593d303a90&sha=45e842c4825ed3bb614e5086b82742c428e0d70b)
 
 ### 软件下载
 [AlphaRain1.exe](http://git.oschina.net/deali/AlphaRain1/attach_files/download?i=16543&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F00%2FA6%2FfMqNk1YaM_2APtJxAAA-APxsiZA416.exe%3Ftoken%3Db83230d00b0d8adfb46b37564210272e%26ts%3D1454419275%26attname%3DAlphaRain1.exe)
