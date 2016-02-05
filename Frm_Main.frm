@@ -73,42 +73,44 @@ Dim i As Long
 
 Private Sub Form_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-    Case 27
-        End
-    Case Else
-        Dim R, G, B As Integer
-        Randomize
-        i = i + 1
-        LBL(0).Caption = Str(i)
-        LBL(0).Left = 0
-        Load LBL(i)
-        
-        R = Int(255 * Rnd) + 1
-        G = Int(Rnd * 255) + 1
-        B = Int(Rnd * 255) + 1
+        Case 27
+            End
+        Case Else
+            Dim R, G, B As Integer
+            Randomize
+            i = i + 1
+            LBL(0).Caption = Str(i)
+            LBL(0).Left = 0
+            Load LBL(i)
 
-        If i Mod 10 = 0 Then
-            Me.Cls
-        End If
-        
-        Print "Get KeyBoard Char+" & Chr(KeyAscii)
-        Print "Load LBL+" & i
-        Print "Load Tmr+" & i
-        Print "Get Random Color+" & RGB(R, G, B)
+            R = Int(255 * Rnd) + 1
+            G = Int(Rnd * 255) + 1
+            B = Int(Rnd * 255) + 1
 
-        With LBL(i)
-            .Left = Int(Screen.Width * Rnd) + 1
-            '.Top = Int(Screen.Height * Rnd) + 1
-            .Top = 0
-            .AutoSize = True
-            .BackStyle = 0
-            .ForeColor = RGB(R, G, B)
-            .Caption = Chr(KeyAscii)
-            .Font.Size = Int(Rnd * 180) + 1
-            .Visible = True
-        End With
-        Load Tmr(i)
-        Tmr(i).Enabled = True
+            If i Mod 10 = 0 Then
+                Me.Cls
+            End If
+
+            Me.ForeColor = RGB(R, G, B)
+
+            Print "[Form_KeyPress]Get KeyBoard Char+" & Chr(KeyAscii)
+            Print "[Form_KeyPress]Load LBL+" & i
+            Print "[Form_KeyPress]Load Tmr+" & i
+            Print "[Form_KeyPress]Get Random Color+" & RGB(R, G, B)
+
+            With LBL(i)
+                .Left = Int(Screen.Width * Rnd) + 1
+                '.Top = Int(Screen.Height * Rnd) + 1
+                .Top = 0
+                .AutoSize = True
+                .BackStyle = 0
+                .ForeColor = RGB(R, G, B)
+                .Caption = Chr(KeyAscii)
+                .Font.Size = Int(Rnd * 180) + 1
+                .Visible = True
+            End With
+            Load Tmr(i)
+            Tmr(i).Enabled = True
     End Select
 End Sub
 
@@ -120,12 +122,21 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub Tmr_Timer(Index As Integer)
+    Dim R, G, B As Integer
+    Randomize
+
+    R = Int(255 * Rnd) + 1
+    G = Int(Rnd * 255) + 1
+    B = Int(Rnd * 255) + 1
+
+    Me.ForeColor = RGB(R, G, B)
+
     If LBL(Index).Top > Screen.Height Then
         Tmr(Index).Enabled = False
         LBL(Index).Visible = False
         Unload LBL(Index)
-        Print "Unload LBL+" & Index
-        Print "Unload Tmr+" & Index
+        Print "[Tmr_Timer]Unload LBL+" & Index
+        Print "[Tmr_Timer]Unload Tmr+" & Index
         Unload Tmr(Index)
         Exit Sub
     Else
