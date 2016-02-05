@@ -36,6 +36,26 @@ Begin VB.Form Frm_Main
       Left            =   960
       Top             =   3000
    End
+   Begin VB.Label LBL_Version 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Ver:1.0"
+      BeginProperty Font 
+         Name            =   "Î¢ÈíÑÅºÚ"
+         Size            =   17.25
+         Charset         =   134
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H0080FF80&
+      Height          =   450
+      Left            =   3480
+      TabIndex        =   1
+      Top             =   3240
+      Width           =   1140
+   End
    Begin VB.Label LBL 
       AutoSize        =   -1  'True
       BackStyle       =   0  'Transparent
@@ -118,6 +138,13 @@ Private Sub Form_Load()
     With LBL(0)
         .Left = 0
         .Top = Screen.Height - .Height
+    End With
+
+    With LBL_Version
+        .AutoSize = True
+        .Caption = "Ver: " & App.Major & "." & App.Minor & "." & App.Revision
+        .Left = Screen.Width - .Width - 100
+        .Top = 100
     End With
 End Sub
 

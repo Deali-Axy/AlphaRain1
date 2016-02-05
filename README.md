@@ -10,7 +10,7 @@ Visual Basic 6.0
 [LGPL 3](http://git.oschina.net/deali/CodeZone/blob/master/LICENSE/LGPL3.LICENSE?dir=0&filepath=LICENSE%2FLGPL3.LICENSE&oid=5cc63c20b453fb272056d6ce14398a593d303a90&sha=45e842c4825ed3bb614e5086b82742c428e0d70b)
 
 ### 软件下载
-[AlphaRain1.exe](http://git.oschina.net/deali/AlphaRain1/attach_files/download?i=16543&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F00%2FA6%2FfMqNk1YaM_2APtJxAAA-APxsiZA416.exe%3Ftoken%3Db83230d00b0d8adfb46b37564210272e%26ts%3D1454419275%26attname%3DAlphaRain1.exe)
+[AlphaRain 1_0_2.exe](http://git.oschina.net/deali/AlphaRain1/attach_files/download?i=20315&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F00%2F6B%2FZxV3aVa0J3KAViArAACQAItxm_I008.exe%3Ftoken%3Dc92f18ad990ce5765b0f004f3572e2aa%26ts%3D1454647094%26attname%3DAlphaRain_1_0_2.exe)
 
 ### 联系作者
 邮箱：deali@live.com
