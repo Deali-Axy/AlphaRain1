@@ -129,12 +129,21 @@ Private Sub Form_KeyPress(KeyAscii As Integer)
                 .Font.Size = Int(Rnd * 180) + 1
                 .Visible = True
             End With
+            
+            Me.Line (LBL(i).Left, 0)-(LBL(i).Left, Screen.Height)
+            
             Load Tmr(i)
             Tmr(i).Enabled = True
     End Select
 End Sub
 
 Private Sub Form_Load()
+    With Me
+        .AutoRedraw = True
+        '.Width = Screen.Width
+        '.Height = Screen.Height
+    End With
+    
     With LBL(0)
         .Left = 0
         .Top = Screen.Height - .Height
