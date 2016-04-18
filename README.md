@@ -14,5 +14,6 @@ Visual Basic 6.0
 
 ### 联系作者
 邮箱：deali@live.com
+Skype：deali@live.com
 QQ：1875615476
 欢迎交流！
